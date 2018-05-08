@@ -136,8 +136,8 @@ mvn package  #安装各种依赖
 ```
 cd /opt/
 wget https://mirrors.tuna.tsinghua.edu.cn/apache/guacamole/0.9.14/binary/guacamole-0.9.14.war
-cp guacamole-0.9.14.war /usr/local/tomact/webapps/guacamole.war
-ln -s /etc/guacamole/guacamole.properties /usr/local/tomact/.guacamole/    #软连接可以忽略
+cp guacamole-0.9.14.war /usr/local/tomcat/webapps/guacamole.war
+ln -s /etc/guacamole/guacamole.properties /usr/local/tomcat/.guacamole/    #软连接可以忽略
 ```
 
 #### 配置guacamole
