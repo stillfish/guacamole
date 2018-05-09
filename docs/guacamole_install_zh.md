@@ -329,8 +329,15 @@ cat /usr/local/tomcat/logs/catalina.out
 
 ```
 yum install nginx -y
-vi /etc/nginx/nginx.conf
 
+systemctl start nginx.service  #启动
+systemctl enable nginx.service #开机自启
+```
+
+* 代理配置文件
+
+```
+vi /etc/nginx/nginx.conf
 
 location /guacamole/ {
     proxy_pass http://HOSTNAME:8080/guacamole/;
