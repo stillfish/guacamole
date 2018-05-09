@@ -94,6 +94,7 @@ cd guacamole-server-0.9.14
 make && make install
 ldconfig
 
+/etc/init.d/guacd start
 /sbin/chkconfig guacd on  #设置开机自启动，根据需要
 ```
 
@@ -129,14 +130,14 @@ vi /etc/guacamole/guacamole.properties
 ####guacamole.properties####
 guacd-hostname: localhost
 guacd-port:     4822
-# user-mapping: /etc/guacamole/user-mapping.xml
+user-mapping: /etc/guacamole/user-mapping.xml
 
 # MySQL properties
-mysql-hostname: localhost
-mysql-port: 3306
-mysql-database: guacamole_db
-mysql-username: guacamole
-mysql-password: guacamole
+# mysql-hostname: localhost
+# mysql-port: 3306
+# mysql-database: guacamole_db
+# mysql-username: guacamole
+# mysql-password: guacamole
 ####guacamole.properties####
 ```
 
@@ -240,21 +241,26 @@ vi /etc/guacamole/logback.xml
 
 ```
 
-
-#### 重启tomcat,并启动guacd服务
-
-```
-cd /usr/local/tomcat/bin/
-./shutdown.sh && ./startup.sh
-
-
-/etc/init.d/guacd start
-```
-
 #### 浏览器访问 http://{您的服务器IP地址}:8080/guacamole/
 
-
 #### 使用mysql 扩展认证用户
+
+```
+vi /etc/guacamole/guacamole.properties
+
+####guacamole.properties####
+guacd-hostname: localhost
+guacd-port:     4822
+# user-mapping: /etc/guacamole/user-mapping.xml
+
+# MySQL properties
+mysql-hostname: localhost
+mysql-port: 3306
+mysql-database: guacamole_db
+mysql-username: guacamole
+mysql-password: guacamole
+####guacamole.properties####
+```
 
 ##### 安装mysql5.5服务 [mysql安装向导](https://blog.csdn.net/petrel2015/article/details/78822466)
 
