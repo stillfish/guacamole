@@ -81,6 +81,7 @@ systemctl enable tomcat.service
 cd /opt/
 wget https://mirrors.tuna.tsinghua.edu.cn/apache/guacamole/0.9.14/source/guacamole-server-0.9.14.tar.gz
 wget https://mirrors.tuna.tsinghua.edu.cn/apache/guacamole/0.9.14/source/guacamole-client-0.9.14.tar.gz
+wget https://mirrors.tuna.tsinghua.edu.cn/apache/guacamole/0.9.14/binary/guacamole-0.9.14.war
 
 ```
 
@@ -113,7 +114,6 @@ source .bashrc
 
 ```
 cd /opt/
-wget https://mirrors.tuna.tsinghua.edu.cn/apache/guacamole/0.9.14/binary/guacamole-0.9.14.war
 cp guacamole-0.9.14.war /usr/local/tomcat/webapps/guacamole.war
 ln -s /etc/guacamole/guacamole.properties /usr/local/tomcat/.guacamole/    #软连接可以忽略
 ```
