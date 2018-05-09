@@ -305,7 +305,7 @@ mysql> quit
 * 导入sql文件到数据库
 
 ```
-cat /etc/guacamole/sqlauth/guacamole-auth-jdbc-0.9.14/schema/*.sql | mysql guacamole_db
+cat /etc/guacamole/sqlauth/guacamole-auth-jdbc-0.9.14/mysql/schema/*.sql | mysql guacamole_db
 ```
 
 * 重启tomcat 默认账号"guacadmin"密码 "guacadmin"
