@@ -25,31 +25,6 @@ rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.
 yum install ffmpeg-devel libtelnet-devel
 ```
 
-#### 安装Maven
-
-```
-cd /opt/
-wget http://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
-tar -zxvf apache-maven-3.3.9-bin.tar.gz 
-```
-
-##### 配置环境变量
-
-```
-cd ~ 
-vim .bashrc
-
-# set maven environment
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-0.b14.el7_4.x86_64
-export JRE_HOME=$JAVA_HOME/jre
-export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
-export M2_HOME=/opt/apache-maven-3.3.9
-export PATH=$M2_HOME/bin:$PATH
-export GUACAMOLE_HOME=/etc/guacamole
-
-source .bashrc
-```
-
 #### 安装tomcat8
 
 ```
@@ -121,16 +96,18 @@ ldconfig
 /sbin/chkconfig guacd on  #设置开机自启动，根据需要
 ```
 
+##### 配置环境变量
+
+```
+cd ~ 
+vim .bashrc
+
+export GUACAMOLE_HOME=/etc/guacamole
+
+source .bashrc
+```
+
 #### 安装guacamole-client
-
-* 源码安装
-
-```
-cd /opt/
-tar -zxvf guacamole-client-0.9.14.tar.gz
-cd guacamole-client-0.9.14
-mvn package  #安装各种依赖
-```
 
 * 直接使用编译包
 
