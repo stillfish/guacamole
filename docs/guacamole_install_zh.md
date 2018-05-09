@@ -275,7 +275,7 @@ mkdir -p /etc/guacamole/sqlauth/
 cd /etc/guacamole/sqlauth/
 wget http://apache.org/dyn/closer.cgi?action=download&filename=guacamole/0.9.14/binary/guacamole-auth-jdbc-0.9.14.tar.gz
 tar -zxvf guacamole-auth-jdbc-0.9.14.tar.gz
-cp guacamole-auth-jdbc-0.9.14/guacamole-auth-jdbc-mysql-0.9.14.jar /etc/guacamole/extensions/
+cp guacamole-auth-jdbc-0.9.14/mysql/guacamole-auth-jdbc-mysql-0.9.14.jar /etc/guacamole/extensions/
 
 ```
 
