@@ -126,23 +126,45 @@ mkdir -p /etc/guacamole/extensions
 mkdir -p /etc/guacamole/lib
 vi /etc/guacamole/guacamole.properties
 
-```
-
-* user-mapping.xml     #配置用户映射文件
-
-```
+####guacamole.properties####
 guacd-hostname: localhost
 guacd-port:     4822
-user-mapping: /etc/guacamole/user-mapping.xml
+# user-mapping: /etc/guacamole/user-mapping.xml
+
+# MySQL properties
+mysql-hostname: localhost
+mysql-port: 3306
+mysql-database: guacamole_db
+mysql-username: guacamole
+mysql-password: guacamole
+####guacamole.properties####
 ```
 
-```
-vi /etc/guacamole/user-mapping.xml
+* logback.xml 服务日志开启
 
 ```
+vi /etc/guacamole/logback.xml
 
-* user-mapping.xml
+####logback.xml####
+<configuration>
 
+    <!-- Appender for debugging -->
+    <appender name="GUAC-DEBUG" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Log at DEBUG level -->
+    <root level="debug">
+        <appender-ref ref="GUAC-DEBUG"/>
+    </root>
+
+</configuration>
+####logback.xml####
+```
+
+* user-mapping.xml     #配置用户映射文件（当使用mysql链接时此配置文件可忽略！）
 
 [编写用户映射配置文件，具体参数配置文档](http://guacamole.apache.org/doc/gug/configuring-guacamole.html)
 
@@ -284,21 +306,6 @@ mysql> quit
 
 ```
 cat /etc/guacamole/sqlauth/guacamole-auth-jdbc-0.9.14/schema/*.sql | mysql guacamole_db
-```
-
-* 配置链接数据库参数 vi /etc/guacamole/guacamole.properties
-
-```
-guacd-hostname: localhost
-guacd-port:     4822
-# user-mapping: /etc/guacamole/user-mapping.xml
-
-# MySQL properties
-mysql-hostname: localhost
-mysql-port: 3306
-mysql-database: guacamole_db
-mysql-username: guacamole
-mysql-password: guacamole
 ```
 
 * 重启tomcat 默认账号"guacadmin"密码 "guacadmin"
