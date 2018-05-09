@@ -323,3 +323,22 @@ cat /etc/guacamole/sqlauth/guacamole-auth-jdbc-0.9.14/mysql/schema/*.sql | mysql
 ```
 cat /usr/local/tomcat/logs/catalina.out
 ```
+
+
+###Nginx反代  看你自己需求
+
+```
+yum install nginx -y
+vi /etc/nginx/nginx.conf
+
+
+location /guacamole/ {
+    proxy_pass http://HOSTNAME:8080/guacamole/;
+    proxy_buffering off;
+    proxy_http_version 1.1;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection $http_connection;
+    access_log off;
+}
+```
