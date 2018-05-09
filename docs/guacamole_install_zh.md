@@ -317,3 +317,9 @@ cat /etc/guacamole/sqlauth/guacamole-auth-jdbc-0.9.14/mysql/schema/*.sql | mysql
 * 重启tomcat 默认账号"guacadmin"密码 "guacadmin"
 
 * 浏览器访问 http://{您的服务器IP地址}:8080/guacamole/
+
+* 日志查询
+
+```
+cat /usr/local/tomcat/logs/catalina.out
+```
