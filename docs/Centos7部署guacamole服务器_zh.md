@@ -169,7 +169,6 @@ vi /etc/guacamole/logback.xml
 
 [编写用户映射配置文件，具体参数配置文档](http://guacamole.apache.org/doc/gug/configuring-guacamole.html)
 
-[中文文档参数参考](https://www.realks.com/category/technology/remote-desktop/)
 ```
 <user-mapping>
         <authorize username="admin" password="admin">
