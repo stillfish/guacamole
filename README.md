@@ -2,7 +2,7 @@
 
 Guacamole是一个提供了基于HTML5 web应用程序的远程桌面代理服务器。通过使用Guacamole服务器，我们很轻松的在浏览器上远程访问Guacamole代理的主机。
 
-[guacamole架构](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/guac-arch.png?raw=true)
+![guacamole架构](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/guac-arch.png?raw=true)
 
 我们可以在浏览器访问Guacamole页面的时候，此时，浏览器会通过HTTP使用Guacamole协议与Guacamole 服务器中的Web服务器进行连接。Guacamole Web应用会从用户的请求中读取Guacamole协议，并将其转发给guacd（本地Guacamole代理）。Guacd根据web 应用转发过来的Guacamole协议来代替用户连接到远程桌面服务器。在Guacamole Web应用与guacd进行通信的时候，两者均不需要知道实际使用的远程桌面协议是什么，即协议不可知性。
 
@@ -17,20 +17,20 @@ Guacamole是一个提供了基于HTML5 web应用程序的远程桌面代理服�
 在浏览器中打开Guacamole Web应用，地址为http://Guacamole_Server_IP:8080/guacamole
 
 Guacamole登录界面
-[guacamole登录界面](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole00.png?raw=true)
+![guacamole登录界面](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole00.png?raw=true)
 
 下图为guacamole登录后显示的页面。
-[guacamole登陆后的界面](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole01.png?raw=true)
+![guacamole登陆后的界面](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole01.png?raw=true)
 
 下图是“CentOS 7 TigerVNC”连接结果，主要测试TigerVNC,采用VNC协议。
-[guacamole_VNC](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole02.png?raw=true)
+![guacamole_VNC](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole02.png?raw=true)
 
 下图是“Windows 10(Test)”连接的结果展示，测试RDP。
-[guacamole_windows](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole03.png?raw=true)
+![guacamole_windows](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole03.png?raw=true)
 
 下图是"CentOS SSH"连接结果，测试SSH。
-[guacamole_ssh](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole04.png?raw=true)
+![guacamole_ssh](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole04.png?raw=true)
 
 下图是“Ubuntu x11vnc”，测试x11vnc。
-[guacamloe_ubuntu](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole05.png?raw=true)
+![guacamloe_ubuntu](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole05.png?raw=true)
 
