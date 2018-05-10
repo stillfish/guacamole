@@ -24,11 +24,9 @@
 | listen-timeout | 如果使用反向连接，等待VNC服务器的入站连接的最长时间（以毫秒为单位）。如果为空，则默认值为5000（5秒）。 | |
 | 音频支持（通过PulseAudio） |
 | enable-audio | 如果设置为“true”，音频支持将被启用，除了VNC连接外，还将进行PulseAudio的第二个连接。默认情况下，VNC内的音频支持被禁用。 |  |
-| audio-servername | 要连接的PulseAudio服务器的名称。这将是通过PulseAudio为您的连接提供音频的计算机的主机名，这很可能与hostname 参数给定的值相同。
-如果省略此参数，则将使用默认的PulseAudio设备，这将是与Guacd在同一台机器上运行的PulseAudio服务器。 |  |
+| audio-servername | 要连接的PulseAudio服务器的名称。这将是通过PulseAudio为您的连接提供音频的计算机的主机名，这很可能与hostname参数给定的值相同。如果省略此参数，则将使用默认的PulseAudio设备，这将是与Guacd在同一台机器上运行的PulseAudio服务器。 |  |
 | 剪贴板编码 |
-| clipboard-encoding | 用于VNC剪贴板的编码。此参数为可选。默认情况下，将使用标准编码ISO 8859-1。如果您确定您的VNC服务器支持超出标准ISO 8859-1的其他编码，则只能使用此参数。
-可能的参数：ISO8859-1、UTF-8、UTF-16、CP1252 |  |
+| clipboard-encoding | 用于VNC剪贴板的编码。此参数为可选。默认情况下，将使用标准编码ISO8859-1。如果您确定您的VNC服务器支持超出标准ISO8859-1的其他编码，则只能使用此参数。可能的参数：ISO8859-1、UTF-8、UTF-16、CP1252 |  |
 
 ## Notice:
 
