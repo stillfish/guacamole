@@ -48,3 +48,6 @@ Guacamole登录界面
 下图是“Ubuntu x11vnc”，测试x11vnc。
 ![guacamloe_ubuntu](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/Guacamole05.png?raw=true)
 
+
+# 免费和开源
+Apache Guacamole始终是免费且开源的软件。它是根据[Apache许可2.0版许可的](http://www.apache.org/licenses/LICENSE-2.0)，并且由使用Guacamole访问他们自己的开发环境的开发人员社区主动维护。
