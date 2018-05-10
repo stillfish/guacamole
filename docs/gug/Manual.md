@@ -6,9 +6,9 @@
 除非适用法律要求或书面同意，否则根据许可分发的软件按“原样”分发，不附有任何形式的明示或暗示的保证或条件。请参阅许可证以获取有关许可证下的权限和限制的特定语言。
 
 ##### 目录
-      [介绍](http://guacamole.apache.org/doc/gug/preface.html)
-      [I.用户指南](http://guacamole.apache.org/doc/gug/users-guide.html)
+ [介绍](http://guacamole.apache.org/doc/gug/preface.html)
+  [I.用户指南](http://guacamole.apache.org/doc/gug/users-guide.html)
       
-             [1.实施和体系结构](http://guacamole.apache.org/doc/gug/guacamole-architecture.html)
-             [2.本机安装guacamole](http://guacamole.apache.org/doc/gug/installing-guacamole.html)
-             [3.用Docker安装guacamole](http://guacamole.apache.org/doc/gug/guacamole-docker.html)
+   [1.实施和体系结构](http://guacamole.apache.org/doc/gug/guacamole-architecture.html)
+   [2.本机安装guacamole](http://guacamole.apache.org/doc/gug/installing-guacamole.html)
+   [3.用Docker安装guacamole](http://guacamole.apache.org/doc/gug/guacamole-docker.html)
