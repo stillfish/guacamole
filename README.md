@@ -26,9 +26,6 @@ Guacamole是一个提供了基于HTML5 web应用程序的远程桌面代理服�
 
 [其它更多参数中文文档](https://github.com/TelDragon/guacamole/blob/master/docs/%E5%85%B6%E4%BB%96%E6%9B%B4%E5%A4%9A%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE_zh.md)
 
-# 开发API文档 (api-documentation)
-
-[api-documentation](https://github.com/TelDragon/guacamole/blob/master/docs/api-documentation.md)
 
 # 测试界面
 
@@ -55,3 +52,7 @@ Guacamole登录界面
 
 # 免费和开源
 Apache Guacamole始终是免费且开源的软件。它是根据[Apache许可2.0版许可的](http://www.apache.org/licenses/LICENSE-2.0)，并且由使用Guacamole访问他们自己的开发环境的开发人员社区主动维护。
+
+# 开发API文档 (api-documentation)
+
+[api-documentation](https://github.com/TelDragon/guacamole/blob/master/docs/api-documentation.md)
