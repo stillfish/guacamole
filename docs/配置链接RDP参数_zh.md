@@ -64,9 +64,9 @@
 
 如果使用预连接PDU需要注意：
 
-    #### 1.设置“ port”为“ 2179”，因为这是Hyper-V使用的默认端口。标准RDP端口为3389，Guacamole将使用端口3389，除非指定了不同的值。
-    #### 2.适当地指定“ username”和“ password”，并将“ security” 设置为“ nla”或“ any”。Hyper-V要求连接客户端进行网络级认证。Guacamole的默认设置是使用标准RDP加密，而不使用Hyper-V不支持的网络级认证。
-    #### 3.如有必要，请将“ ignore-cert” 设置为“ true”。Hyper-V可能使用自签名证书。
+##### 1.设置“ port”为“ 2179”，因为这是Hyper-V使用的默认端口。标准RDP端口为3389，Guacamole将使用端口3389，除非指定了不同的值。
+##### 2.适当地指定“ username”和“ password”，并将“ security” 设置为“ nla”或“ any”。Hyper-V要求连接客户端进行网络级认证。Guacamole的默认设置是使用标准RDP加密，而不使用Hyper-V不支持的网络级认证。
+##### 3.如有必要，请将“ ignore-cert” 设置为“ true”。Hyper-V可能使用自签名证书。
 
 ### 2. 设备重定向
 
