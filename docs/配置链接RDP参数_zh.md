@@ -51,12 +51,9 @@
 | enable-desktop-composition | 如果设置为“true”，则允许使用透明窗口和阴影等图形效果。默认情况下，此类效果（如果可用）被禁用。 |  |
 | enable-menu-animations | 如果设置为“true”，菜单开启和关闭动画将被允许。默认情况下禁用菜单动画 |  |
 | RemoteApp |
-| remote-app | 指定RemoteApp在远程桌面上启动。如果您的远程桌面服务器支持，则该应用程序以及只有此应用程序将对用户可见。
-Windows需要对远程应用程序的名称的特殊符号。远程应用程序的名称必须带有两个竖条。例如，如果您已在服务器上创建了一个远程应用程序并为其 notepad.exe分配了名称“notepad”，则可以将此参数设置为：“|| notepad”。 |  |
-| remote-app-dir | 用于远程应用程序的工作目录（如果有）。
-如果RemoteApp不在使用中，则此参数无效。 |  |
-| remote-app-args | 用于远程应用程序的命令行参数（如果有）。
-如果RemoteApp不在使用中，则此参数无效。 |  |
+| remote-app | 指定RemoteApp在远程桌面上启动。如果您的远程桌面服务器支持，则该应用程序以及只有此应用程序将对用户可见。Windows需要对远程应用程序的名称的特殊符号。远程应用程序的名称必须带有两个竖条。例如，如果您已在服务器上创建了一个远程应用程序并为其 notepad.exe分配了名称“notepad”，则可以将此参数设置为：“|| notepad”。 |  |
+| remote-app-dir | 用于远程应用程序的工作目录（如果有）。如果RemoteApp不在使用中，则此参数无效。 |  |
+| remote-app-args | 用于远程应用程序的命令行参数（如果有）。如果RemoteApp不在使用中，则此参数无效。 |  |
 
 
 ## Notice:
