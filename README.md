@@ -26,6 +26,7 @@ Guacamole是一个提供了基于HTML5 web应用程序的远程桌面代理服�
 
 [其它更多参数中文文档](https://github.com/TelDragon/guacamole/blob/master/docs/%E5%85%B6%E4%BB%96%E6%9B%B4%E5%A4%9A%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE_zh.md)
 
+[guacamole用户手册](https://github.com/TelDragon/guacamole/blob/master/docs/gug/Manual.md)
 
 # 测试界面
 
