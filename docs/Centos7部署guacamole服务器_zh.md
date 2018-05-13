@@ -177,7 +177,9 @@ vi /etc/guacamole/logback.xml
                          <param name="hostname">192.168.1.199</param>
                          <param name="port">22</param>
                          <param name="username">root</param>
-                         <param name="password">1qaz2wsx</param>
+                         <param name="password">******</param>
+                         
+                         <!-- 实时录像 前提要有这个目录！-->
                          <param name="typescript-path">/usr/local/tomact/webapps/guacamole/media/${GUAC_DATE}</param> 
                          <param name="create-typescript-path">true</param>
                          <param name="typescript-name">7b40a4ff-552c-4891-a62f-4cef1e73c0dc</param>
@@ -186,6 +188,8 @@ vi /etc/guacamole/logback.xml
                          <protocol>telnet</protocol>
                          <param name="hostname">192.168.1.250</param>
                          <param name="port">23</param>
+                         
+                         <!-- 实时录像 前提要有这个目录！-->
                          <param name="typescript-path">/usr/local/tomact/webapps/guacamole/media/${GUAC_DATE}</param> 
                          <param name="create-typescript-path">true</param>
                          <param name="typescript-name">c0601d1e-a5a6-42d4-9fca-9d310817f95b</param>
@@ -195,8 +199,9 @@ vi /etc/guacamole/logback.xml
                          <protocol>rdp</protocol>
                          <param name="hostname">192.168.1.249</param>
                          <param name="port">3389</param>
+                         <!--如远端服务器开启了网络认证需要加上这四个参数，账号密码必须在前！ -->
                          <param name="username">Administrator</param>
-                         <param name="password">Topmay2011</param>
+                         <param name="password">******</param>
                          <param name="security">nla</param>
                          <param name="ignore-cert">true</param>
 
@@ -204,6 +209,7 @@ vi /etc/guacamole/logback.xml
                          <param name="console">true</param>
                          <param name="server-layout">en-us-qwerty</param>
 
+                         <!-- 实时录像 前提要有这个目录！-->
                          <param name="recording-path">/usr/local/tomact/webapps/guacamole/media/${GUAC_DATE}</param>
                          <param name="create-recording-path">true</param>
                          <param name="recording-name">c0601d1e-a5a6-42d4-9fca-9d310817f95b</param>
@@ -222,7 +228,7 @@ vi /etc/guacamole/logback.xml
                          <param name="port">3389</param>
                          <!--如远端服务器开启了网络认证需要加上这四个参数，账号密码必须在前！ -->
                          <param name="username">Administrator</param>
-                         <param name="password">Topmay2011</param>
+                         <param name="password">******</param>
                          <param name="security">nla</param>
                          <param name="ignore-cert">true</param>
                          
@@ -324,7 +330,7 @@ cat /usr/local/tomcat/logs/catalina.out
 ```
 
 
-###Nginx反代  看你自己需求
+### Nginx反代  看你自己需求
 
 ```
 yum install nginx -y
