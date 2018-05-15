@@ -13,7 +13,7 @@
 ```
 yum -y groupinstall "Development Tools" 
 
-yum install cairo-devel libjpeg-devel libpng-devel uuid-devel ffmpeg-devel freerdp-devel pango-devel libssh2-devel libtelnet-devel    libvncserver-devel pulseaudio-libs-devel openssl-devel libvorbis-devel libwebp-devel wget gedit  java-1.8.0-openjdk*
+yum install cairo-devel libjpeg-devel libpng-devel uuid-devel ffmpeg-devel freerdp-devel freerdp-plugins pango-devel libssh2-devel libtelnet-devel    libvncserver-devel pulseaudio-libs-devel openssl-devel libvorbis-devel libwebp-devel wget gedit  java-1.8.0-openjdk*
 ```
 
 * ffmpeg centos7 默认源没有改用其他源
