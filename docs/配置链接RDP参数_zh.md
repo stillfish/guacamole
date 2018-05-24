@@ -77,3 +77,24 @@
 打印需要在Guacamole服务器上安装GhostScript，并允许用户将任意文档直接打印到PDF。当文档打印到重定向打印机时，用户将在其Web浏览器中收到该文档的PDF。
 
 Guacamole通过模拟虚拟磁盘驱动器提供对RDP文件传输的支持。该驱动器将持续在Guacamole服务器上，限于指定的驱动器路径。如果在Guacamole SSH连接上启用了驱动器重定向，则用户将能够上传和下载文件。
+
+如果你的服务驱动重定向失败可能存在动态库加载错误查询日志
+
+```
+Failed to load guacdr plugin. Drive redirection and printing will not work. Sound MAY not work.
+Failed to load guacsnd alongside guacdr plugin. Sound will not work. Drive redirection and printing MAY not work.
+```
+centos7 解决方法
+
+```
+ln -s /usr/local/lib/freerdp/guacdr.so /usr/lib64/freerdp/
+ln -s /usr/local/lib/freerdp/guacsnd.so /usr/lib64/freerdp/
+```
+
+debian 解决方法
+
+```
+mkdir -p /usr/lib/x86_64-linux-gnu/freerdp
+ln -s /usr/local/lib/freerdp/guacsnd-client.so /usr/lib/x86_64-linux-gnu/freerdp/guacsnd-client.so
+ln -s /usr/local/lib/freerdp/guacdr-client.so /usr/lib/x86_64-linux-gnu/freerdp/guacdr-client.so
+```
