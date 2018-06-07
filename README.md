@@ -58,3 +58,8 @@ Apache Guacamole始终是免费且开源的软件。它是根据[Apache许可2.0
 # 开发API文档 (api-documentation)
 
 [api-documentation](https://github.com/TelDragon/guacamole/blob/master/docs/api-documentation.md)
+
+
+# 如果我的仓库可以帮到你什么忙，欢迎打赏~
+
+![winxin_pay.png](https://github.com/TelDragon/guacamole/blob/master/docs/_static/img/weixin_pay.png?raw=true)
