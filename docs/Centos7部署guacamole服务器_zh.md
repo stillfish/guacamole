@@ -187,3 +187,17 @@ ln -s /etc/guacamole/guacamole.properties /usr/local/tomcat/.guacamole/    #软
    }
 
 ```
+
+
+* 字体设置
+
+```
+mkdir -p /usr/share/fonts/chinese
+# 将 simhei.ttf(黑体) 与 simsun.ttc(宋体) 拷贝至此文件夹
+ttmkfdir -e /usr/share/X11/fonts/encodings/encodings.dir
+
+vi /etc/fonts/fonts.conf
+<dir>/usr/share/fonts/chinese</dir>
+fc-cache
+fc-list
+```
