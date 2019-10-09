@@ -47,7 +47,9 @@ cd guacamole-server-1.0.0
 make && make install
 ldconfig
 
-/sbin/chkconfig guacd on  #设置开机自启动
+systemctl enable guacd
+systemctl start guacd
+systemctl status guacd
 ```
 
 * 配置环境变量
@@ -118,7 +120,7 @@ vi /etc/guacamole/logback.xml
 yum -y install java-1.8.0-openjdk*
 
 cd /etc/guacamole/sqlauth
-wget http://apache.org/dyn/closer.cgi?action=download&filename=guacamole/1.0.0/binary/guacamole-auth-jdbc-1.0.0.tar.gz
+wget https://mirrors.tuna.tsinghua.edu.cn/apache/guacamole/1.0.0/binary/guacamole-auth-jdbc-1.0.0.tar.gz
 tar -zxvf guacamole-auth-jdbc-1.0.0.tar.gz
 cp guacamole-auth-jdbc-1.0.0/mysql/guacamole-auth-jdbc-mysql-1.0.0.jar /etc/guacamole/extensions/
 
